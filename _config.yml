@@ -1,0 +1,12 @@
+# Site settings
+title: ManuelDuNet
+email: contact@manueldu.net
+description: > # this means to ignore newlines until "baseurl:"
+  Le manuel indispensable à tous les utilisateurs d'ordinateurs et d'Internet. Le ManuelDuNet rend l'ordinateur et l'Internet en général accessible à tous. Le ManuelDuNet couvre de nombreux sujets avec un accent particulier sur la sécurité informatique mise à la portée de tous. Vous y trouverez toutes les bonnes pratiques détaillées et en français pour vous réapproprier Internet.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://manueldu.net" # the base hostname & protocol for your site
+twitter_username: manueldunet
+github_username:  manueldu-net
+
+# Build settings
+markdown: kramdown

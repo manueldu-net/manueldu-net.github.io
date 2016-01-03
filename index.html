@@ -1,3 +1,38 @@
+---
+layout: default
+noindex: false
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7446867015857208"
+     data-ad-slot="9393614978"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+<!--
 <html>
 <head>
 <title>
@@ -33,3 +68,4 @@ Le ManuelDuNet couvre de nombreux sujets avec un accent particulier sur la sécu
 Vous y trouverez toutes les bonnes pratiques détaillées et en français pour vous réapproprier Internet.
 </p>
 </html>
+-->
