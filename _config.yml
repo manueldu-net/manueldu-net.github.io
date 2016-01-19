@@ -21,7 +21,7 @@ theme:
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
   footer_text: >
-   <a href="https://yoursite.com">YOUR TITLE</a>
+   <a href="https://manueldu.net">ManuelDu.Net</a>
 
   # Icons
   rss: false
