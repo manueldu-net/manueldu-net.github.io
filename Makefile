@@ -1,11 +1,13 @@
 
 MYBUNDLE="./.mybundle"
 
+all: serve
+
 deps:
 	bundle install --path=$(MYBUNDLE)
 
-build:
+build: deps
 	bundle exec jekyll build
 
-serve:
-	bundle exec jekyll serve -w
+serve: build
+	bundle exec jekyll serve
