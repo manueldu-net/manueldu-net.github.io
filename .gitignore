@@ -6,3 +6,4 @@ Gemfile.lock
 .mybundle
 .bundle
 *.swp
+.sass-cache
