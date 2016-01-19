@@ -11,3 +11,6 @@ build: deps
 
 serve: build
 	bundle exec jekyll serve
+
+clean:
+	rm -rf _site
