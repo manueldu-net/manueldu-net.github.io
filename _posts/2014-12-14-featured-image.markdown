@@ -3,7 +3,7 @@ layout: post
 title:  "Featured Image"
 date:   2014-12-14
 image: touring.jpg
-author: Author
+author: riton
 category: ios
 tags: [jekyll, github]
 ---

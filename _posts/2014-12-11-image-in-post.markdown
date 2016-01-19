@@ -2,7 +2,7 @@
 layout: post
 title:  "Image in Post"
 date:   2014-12-11
-author: Author
+author: riton
 category: design
 tags: [icons, django]
 ---

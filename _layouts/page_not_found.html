@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>404 | {{ site.theme.title }}</title>
+  <title>Page non trouvée | {{ site.theme.title }}</title>
   <style>
     html,
     body {
@@ -55,7 +55,7 @@
 
     h1 {
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
-      font-size: 80px;
+      font-size: 60px;
       margin: 0;
       font-weight: 800;
       line-height: 1;
@@ -144,7 +144,7 @@
   <div class="background-overlay"></div>
   <div class="header">
     <div class="container">
-      <a href="{{ site.baseurl }}/" title="Back to Home">
+      <a href="{{ site.baseurl }}/" title="Retour à l'accueil">
         <svg width="104px" height="104px" viewBox="0 20 212 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>{{ site.theme.title }}</title>
             <defs></defs>
@@ -165,18 +165,16 @@
 
         <div class="container">
 
-          <h1>404</h1>
+          <h1>Erreur 404</h1>
 
           <div class="error-message">
-            <p class="error-message__main">Oops! 没找到你想要的页面。</p>
-            <p class="error-message__sub">如果你认为是网站出错了，<a href="mailto:{{ site.email_address }}">请联系我</a>。</p>
-            <p class="error-message__main">Oops! Page not found.</p>
-            <p class="error-message__sub">if you think it's a mistake on our end, <a href="mailto:{{ site.email_address }}">let me know what happened</a>.</p>
+            <p class="error-message__main">Oops! La page demandée n'a pas été trouvée !</p>
+            <p class="error-message__sub">Si vous constatez une erreur sur le site, merci de <a href="mailto:{{ site.theme.email_address }}">nous le signaler</a>.</p>
           </div> <!-- close .error-message -->
         </div> <!-- close .container -->
 
         <a href="{{ site.baseurl }}/" class="btn">
-          Go Back
+          Revenir en arrière
         </a>
       </div> <!-- close .cell-wrapper -->
     </div> <!-- close .table-wrapper -->
@@ -199,40 +197,14 @@
       defaults = {
         gifs: {
           fail: [
-            'https://images.unsplash.com/gifs/fail/fail-1.gif',
-            'https://images.unsplash.com/gifs/fail/fail-2.gif',
-            'https://images.unsplash.com/gifs/fail/fail-3.gif',
-            'https://images.unsplash.com/gifs/fail/fail-5.gif',
-            'https://images.unsplash.com/gifs/fail/fail-6.gif',
-            'https://images.unsplash.com/gifs/fail/fail-7.gif',
-            'https://images.unsplash.com/gifs/fail/fail-8.gif',
-            'https://images.unsplash.com/gifs/fail/fail-9.gif',
-            'https://images.unsplash.com/gifs/fail/fail-11.gif',
-            'https://images.unsplash.com/gifs/fail/fail-12.gif',
-            'https://images.unsplash.com/gifs/fail/fail-13.gif',
-            'https://images.unsplash.com/gifs/fail/fail-14.gif',
-            'https://images.unsplash.com/gifs/fail/fail-15.gif',
-            'https://images.unsplash.com/gifs/fail/fail-16.gif',
-            'https://images.unsplash.com/gifs/fail/fail-17.gif',
-            'https://images.unsplash.com/gifs/fail/fail-18.gif',
-            'https://images.unsplash.com/gifs/fail/fail-20.gif',
-            'https://images.unsplash.com/gifs/fail/fail-21.gif',
-            'https://images.unsplash.com/gifs/fail/fail-22.gif',
-          ],
-          weird: [
-            'https://images.unsplash.com/gifs/weird/weird-1.gif',
-            'https://images.unsplash.com/gifs/weird/weird-3.gif',
-            'https://images.unsplash.com/gifs/weird/weird-4.gif',
-            'https://images.unsplash.com/gifs/weird/weird-6.gif',
-            'https://images.unsplash.com/gifs/weird/weird-8.gif',
-            'https://images.unsplash.com/gifs/weird/weird-9.gif',
-            'https://images.unsplash.com/gifs/weird/weird-10.gif',
-            'https://images.unsplash.com/gifs/weird/weird-11.gif',
-            'https://images.unsplash.com/gifs/weird/weird-12.gif',
-            'https://images.unsplash.com/gifs/weird/weird-13.gif',
-            'https://images.unsplash.com/gifs/weird/weird-14.gif',
-            'https://images.unsplash.com/gifs/weird/weird-15.gif',
-            'https://images.unsplash.com/gifs/weird/weird-16.gif',
+{% assign imgfail_base = '/img/fail' %}
+{% assign max_idx = 21 %}
+{% for i in (1..max_idx) %}
+{% comment %}
+generated with gifsicle -O3 --colors 16 $f > $f.new
+{% endcomment %}
+            '{{ site.baseurl }}{{ imgfail_base }}/fail-{{ i }}.gif',
+{% endfor %}
           ]
         }
       };
@@ -260,16 +232,13 @@
     })(window);
   </script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  {% if site.theme.google_analytics %}
+  {% include google_analytics.html %}
+  {% endif %}
 
-    ga('create', 'UA-36049670-4', 'auto');
-    ga('send', 'pageview');
-    ga('send', 'event', 'action', '404');
-  </script>
+  {% if site.theme.google_tagmanager %}
+  {% include google_tagmanager.html %}
+  {% endif %}
 
 </body>
 </html>
