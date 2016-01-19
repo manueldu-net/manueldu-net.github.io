@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /About/
+title: A propos
+permalink: /a-propos/
 feature-img: "img/sample_feature_img_2.png"
 ---
 

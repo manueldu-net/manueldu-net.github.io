@@ -48,6 +48,10 @@ header {
   .post-content {
     @extend %padding-regular;
   }
+  img {
+    margin: auto;
+    display: block;
+  }
 }
 .home-feature-image {
   border: 0px;
