@@ -5,6 +5,7 @@ all: serve
 
 deps:
 	bundle install --path=$(MYBUNDLE)
+	pip install html5validator
 
 build: deps
 	bundle exec jekyll build
@@ -17,3 +18,6 @@ serve: build
 
 clean:
 	rm -rf _site
+
+validate:
+	html5validator --root _site
