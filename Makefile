@@ -16,6 +16,9 @@ build-nodeps:
 serve: build
 	bundle exec jekyll serve -w
 
+devel:
+	bundle exec jekyll serve --drafts -w
+
 clean:
 	rm -rf _site
 
