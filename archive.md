@@ -18,7 +18,8 @@ permalink: /Archives/
       {% endif %}
     {% endunless %}
       <li>
-        <b><a href="{{ post.url }}">{{ post.title }}</a></b> publié le <time>{{ post.date | date:"%d %b"}}</time>
+        {% assign month_idx = post.date | date:"%m" %}
+        <b><a href="{{ post.url }}">{{ post.title }}</a></b> publié le <time>{{ post.date | date:"%d" }} {{ month_idx | french_month_short }}</time>
       </li>
   {% endfor %}
   </ul>
