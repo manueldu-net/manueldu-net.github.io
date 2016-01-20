@@ -3,14 +3,22 @@ baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e
 url: "https://manueldu.net" # the base hostname & protocol for your site
 imageurl: "/img/banner.png" #"https://unsplash.it/2600/500?random"
 aboutimageurl: "/img/about.png"
+name: Manuel Du Net
+description: Site dédié à la vulgarisation de l'outil informatique et de l'Internet
+author:
+  name: 'riton'
+  email: 'webmaster@manueldu.net'
+  uri: 'https://github.com/riton'
+
+
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Le Manuel Du Net
+  title: Manuel Du Net
   #avatar: avatar.png
   hometitle: Accueil #display on navigation menu.
-  yoursitetitle: LE MANUEL DU NET
+  yoursitetitle: MANUEL DU NET
   gravatar: # Email MD5 hash
   jabberchannel: 
   description: "used by search engines" # used by search engines
@@ -90,3 +98,4 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
