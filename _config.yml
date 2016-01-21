@@ -10,6 +10,13 @@ author:
   email: 'webmaster@manueldu.net'
   uri: 'https://github.com/riton'
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: 'posts'
+    values:
+      is_post: true
 
 
 # THEME-SPECIFIC CONFIGURATION
@@ -18,7 +25,7 @@ theme:
   title: Manuel Du Net
   #avatar: avatar.png
   hometitle: Accueil #display on navigation menu.
-  yoursitetitle: MANUEL DU NET
+  yoursitetitle: Votre Aide sur Internet
   gravatar: # Email MD5 hash
   jabberchannel: 
   description: "used by search engines" # used by search engines

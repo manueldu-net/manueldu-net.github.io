@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel='stylesheet' id='divi-style-css'  href="{{ "/css/style.css" | prepend: site.baseurl }}" type='text/css' media='all' />
 	<link rel="stylesheet" href="{{ "/css/post.style.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.min.css">
 
-	<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       
         {% if site.theme.jabberchannel %}
         {% include chat.js %}
@@ -51,7 +52,6 @@
         {% if site.theme.google_tagmanager %}
         {% include google_tagmanager.html %}
         {% endif %}
-
 
 	<script type="text/javascript">
     var host = "{{ site.enforce_ssl }}";

@@ -1,7 +1,8 @@
-
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type='text/javascript' src="{{ "/js/frontend-builder-global-functions.js" | prepend: site.baseurl }}"></script>
-<script type='text/javascript' src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
-<!--<script type='text/javascript' src="{{ "/js/jquery.fitvids.js" | prepend: site.baseurl }}"></script>-->
 <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.min.css"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 <script type='text/javascript' src="{{ "/js/frontend-builder-scripts.js" | prepend: site.baseurl }}"></script>
+{% if page.is_post %}<script type='text/javascript' src="{{ "/js/post.js" | prepend: site.baseurl }}"></script>{% endif %}
+{% comment %} Must be the last script loaded or it will break {% endcomment %}
+<script type='text/javascript' src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
