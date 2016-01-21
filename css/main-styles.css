@@ -852,7 +852,7 @@ ul.et_pb_side_nav .side_nav_item a.active { background-color: #fff !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav ul li:hover > ul { -webkit-animation: flipInX .6s ease-in-out; -moz-animation: flipInX .6s ease-in-out; -o-animation: flipInX .6s ease-in-out; animation: flipInX .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav li:hover > ul { -webkit-animation: flipInY .6s ease-in-out; -moz-animation: flipInY .6s ease-in-out; -o-animation: flipInY .6s ease-in-out; animation: flipInY .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 	
-	#page-container { min-height:100vh !important; position:relative !important; }
+	#page-container { min-height: 100vh !important; position:relative !important; }
 	
 	/* Vertical Navigation */
 	.et_vertical_nav #et-main-area, .et_vertical_nav #top-header { margin-left: 225px !important; position: relative; }
