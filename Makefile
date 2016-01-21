@@ -1,5 +1,6 @@
 
 MYBUNDLE="./.mybundle"
+HTML_MINIFIER="./utils/minify_html.rb"
 
 all: serve
 
@@ -9,9 +10,11 @@ deps:
 
 build: deps
 	bundle exec jekyll build
+	$(HTML_MINIFIER)
 
 build-nodeps:
 	bundle exec jekyll build
+	$(HTML_MINIFIER)
 
 serve: build
 	bundle exec jekyll serve -w
