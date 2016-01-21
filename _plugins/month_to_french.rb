@@ -16,6 +16,21 @@ module Jekyll
       'Décembre'
     ]
 
+    MONTHS_SHORT = [
+      'Janv.',
+      'Févr.',
+      'Mars',
+      'Avr.',
+      'Mai',
+      'Juin',
+      'Juill.',
+      'Août',
+      'Sept.',
+      'Oct.',
+      'Nov.',
+      'Déc.'
+    ]
+
     def french_month(input)
       return Jekyll::FrenchMonthFilter::MONTHS[input.to_i() - 1]
     end
@@ -23,6 +38,11 @@ module Jekyll
     def french_month_short(input)
       m = self.french_month(input)
       return m[0..2]
+    end
+
+    def date_to_french(input)
+      m = Jekyll::FrenchMonthFilter::MONTHS_SHORT[input.month - 1]
+      return "#{input.day} #{m} #{input.year}"
     end
   end
 end
