@@ -97,6 +97,9 @@ sechby:
 
 # BUILD SETTINGS
 markdown: redcarpet
+redcarpet:
+  extensions: []
+
 highlighter: pygments
 sass:
   sass_dir: _sass
