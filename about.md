@@ -36,15 +36,5 @@ Ce site fera de son mieux pour vous permettre de:
 
 * comprendre les traces que vous laissez sur Internet
 * préserver votre vie privée sur Internet
-* d'améliorer votre connaissance de la sécurité sur Internet
-
-
-Nous ferons de notre mieux mais cela ne peut pas se faire sans votre retour.
-
-### 
-
-## <i class="fa fa-users"></i> Hey Manu ! Tu te présentes ?
-
-## <i class="fa fa-exclamation-triangle"></i> Le Manuel pas net
-
+* améliorer votre connaissance de la sécurité informatique et sur Internet
 
