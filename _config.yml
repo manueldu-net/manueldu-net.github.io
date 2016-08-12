@@ -86,7 +86,7 @@ theme:
 
 # PAGINATION
 enforce_ssl: "manueldu.net"
-paginate: 2
+paginate: 5
 paginate_path: "/page:num"
 permalink: '/:title/'
 
