@@ -30,3 +30,15 @@
 
 - slug: newtag
   name: Newtag
+
+- slug: securite
+  name: "Securité"
+
+- slug: chiffrement
+  name: Chiffrement
+
+- slug: cloud
+  name: Cloud
+
+- slug: logiciel
+  name: Logiciel
