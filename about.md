@@ -2,7 +2,6 @@
 layout: page
 title: A propos
 permalink: /a-propos/
-feature-img: "img/about.png"
 ---
 
 # <i class="fa fa-history" aria-hidden="true"></i> L'HISTOIRE DU MANUEL DU NET
@@ -11,7 +10,7 @@ feature-img: "img/about.png"
 
 ## <i class="fa fa-info-circle" aria-hidden="true"></i> Mais c'est quoi encore ce site !?
 
-Ok, d'abord, un [premier indice](http://www.perdu.com/) au cas où vous vous seriez perdus sur le net <i class="fa fa-smile-o"></i>.
+Ok, d'abord, un <a href="http://www.perdu.com" target="_blank">premier indice</a> au cas où vous vous seriez perdus sur le net <i class="fa fa-smile-o"></i>.
 
 Vous vous demandez toujours ce que vous faites ici ?
 
