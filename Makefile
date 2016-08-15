@@ -4,6 +4,9 @@ HTML_MINIFIER="./utils/minify_html.rb"
 
 all: serve
 
+bundle-deps:
+	sudo apt install liblzma-dev zlib1g-dev libxml2-dev
+
 deps:
 	bundle install --path=$(MYBUNDLE)
 	pip install html5validator

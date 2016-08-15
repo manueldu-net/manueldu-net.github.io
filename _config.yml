@@ -96,9 +96,9 @@ sechby:
   tag:   #with
 
 # BUILD SETTINGS
-markdown: redcarpet
-redcarpet:
-  extensions: []
+markdown: kramdown
+kramdown:
+  input: GFM
 
 highlighter: pygments
 sass:
