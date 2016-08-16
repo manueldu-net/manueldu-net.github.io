@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign post = page %}
 {% include post_tags_category.html %}
+{% include post_date.html %}
 
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
@@ -12,7 +13,7 @@ layout: default
   <header style="background-image: url('{{ site.imageurl }}')"-->
     <h1 class="title">{{ page.title }}</h1>
     <p id="subtitletrans" class="subtitlecontainer">
-    <i class="fa fa-calendar"></i> <a class="subtitle">{{ post.date | date_to_french }}</a>
+    <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
     {% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}
 	{% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
     </p>
