@@ -10,6 +10,10 @@ author:
   email: 'webmaster@manueldu.net'
   uri: 'https://github.com/riton'
 
+timezone: 'Europe/Paris'
+encoding: 'utf-8'
+safe: false
+
 defaults:
   -
     scope:
