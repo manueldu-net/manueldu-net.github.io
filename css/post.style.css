@@ -44,7 +44,7 @@ td:last-child{border-right:0}
 th{background-color:#f7f7f7;border-bottom:1px solid #d0d0d0;border-right:1px solid #d0d0d0}
 th:last-child{border-right:0}
 @media (min-width: 43.75em){body{font-size:1em;line-height:1.375}}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:.5rem 0 .5rem; font-weight: normal; font-family: "Microsoft YaHei","Open Sans",Helvetica,Arial,sans-serif;}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:.5rem 0 .5rem; font-weight: normal; font-family: "Open Sans",Helvetica,Arial,sans-serif;}
 h1,.h1{font-size:2em;line-height:1.25}
 @media (min-width: 43.75em){h1,.h1{font-size:2.5em;line-height:1.125}}
 @media (min-width: 56.25em){h1,.h1{font-size:3em;line-height:1.05}}
