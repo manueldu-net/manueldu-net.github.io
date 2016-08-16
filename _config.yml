@@ -95,6 +95,9 @@ sechby:
   category:   #in
   tag:   #with
 
+tag_page: '/mots-cles/'
+category_page: '/themes-du-site/'
+
 # BUILD SETTINGS
 markdown: kramdown
 kramdown:

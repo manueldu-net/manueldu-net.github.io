@@ -15,7 +15,15 @@ layout: default
     <p id="subtitletrans" class="subtitlecontainer">
     <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
     {% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}
-	{% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
+    | <a class="subtitle">{{ category_content }}</a>
+    <br/>
+    <a class="subtitle post-tag">
+      {% if page.tags %}
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+    </a>
     </p>
   </header>
   <section class="post-content">

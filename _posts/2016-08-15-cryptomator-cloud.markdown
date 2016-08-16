@@ -3,7 +3,7 @@ layout: post
 title:  "Chiffrer facilement vos données Google Drive, DropBox, ... avec CryptoMator"
 date:   2016-08-15
 author: riton
-category: cloud
+category: Cloud
 tags:
   - securite
   - chiffrement

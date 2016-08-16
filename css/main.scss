@@ -1,5 +1,13 @@
 ---
 ---
+
+// Configuration
+@import 'config';
+
+// Dependency
+@import 'bourbon/bourbon';
+
+
 // External
 @import 'external/reset';
 @import 'external/syntax';
@@ -8,6 +16,10 @@
 @import 'base/variables';
 @import 'base/global';
 @import 'base/utility';
+
+// Components
+@import 'components/categories';
+@import 'components/tags';
 
 // Posts
 @import 'layouts/posts';

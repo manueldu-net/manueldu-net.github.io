@@ -3,7 +3,7 @@ layout: post
 date:   2016-08-14
 title: "Bonjour le monde / Hello World"
 author: riton
-category: vie-du-site
+category: Vie du site
 ---
 
 # Hello World !
