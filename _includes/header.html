@@ -14,15 +14,26 @@
 							{{ site.theme.hometitle }}
 						</a>
 					</li>
-					{% for page in site.pages %}
-					{% if page.title and page.hide != true %}
-					<li>
-						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-							{{ page.title }}
-						</a>
-					</li>
-					{% endif %}
-					{% endfor %}
+          <!-- Liste des themes -->
+          <li>
+            <a class="page-link" href="/{{ 'themes-du-site' | prepend: site.baseurl }}/">
+            Liste des thèmes
+            </a>
+          </li>
+
+          <!-- Liste des mots clefs -->
+          <li>
+            <a class="page-link" href="/{{ 'mots-cles' | prepend: site.baseurl }}/">
+            Liste des mots cles
+            </a>
+          </li>
+
+          <li>
+            <a class="page-link" href="/{{ 'a-propos' | prepend: site.baseurl }}/">
+            A propos
+            </a>
+          </li>
+
 					<!-- Social icons from Font Awesome, if enabled -->
 					<li>
 						<a class="page-link" href="">Suivez-nous</a>
@@ -40,6 +51,7 @@
 			</div>				
 		</div> <!-- #et-top-navigation -->
 	</div> <!-- .container -->
+        <!--
 	<div class="et_search_outer">
 		<div class="container et_search_form_container">
 			<form role="search" method="get" class="et-search-form" action="{{ site.url }}">
@@ -47,4 +59,5 @@
 			<span class="et_close_search_field"></span>
 		</div>
 	</div>
+        -->
 </header> <!-- #main-header -->

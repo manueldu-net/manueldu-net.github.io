@@ -9,6 +9,7 @@ layout: default
 	<div class="posts">
 	{% for post in paginator.posts %}
 		{% include post_tags_category.html %}
+    {% include post_date.html %}
 		<div class="post-teaser">
 		  <header>
 		    <h1>
@@ -17,8 +18,8 @@ layout: default
 		      </a>
 		    </h1>
 		    <p id="subtitletrans" class="subtitlecontainer">
-		      <i class="fa fa-calendar"></i> <a class="subtitle">{{ post.date | date_to_french }}</a>
-		      {% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}
+		      <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
+          {% comment %}{% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}{% endcomment %}
 		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
 		    </p>
 		  </header>
