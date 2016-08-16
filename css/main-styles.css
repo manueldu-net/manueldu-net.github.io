@@ -12,7 +12,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 /* Basic Styles */
 	/* Body */
-	body { font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; color: #333; background-color: #fff; line-height: 1.7em; font-weight: 500; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+	body { font-size: 14px; color: #333; background-color: #fff; line-height: 1.7em; font-weight: 500; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	body.et_non_fixed_nav.et_transparent_nav.et_boxed_layout #page-container,
 	body.et_fixed_nav.et_boxed_layout #page-container { padding-top: 54px; }
 	body.page-template-page-template-blank-php #page-container { padding-top: 0 !important; }
@@ -27,7 +27,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 	p:last-of-type { padding-bottom: 0; }
 	strong { font-weight: bold; }
 	cite, em, i { font-style: italic; }
-	pre, code { font-family: Courier New, monospace; margin-bottom: 10px; }
+	pre, code { margin-bottom: 10px; }
 	ins { text-decoration: none; }
 	sup, sub { height: 0; line-height: 1; position: relative; vertical-align: baseline; }
 	sup { bottom: 0.8em; }
@@ -40,7 +40,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 	/* Headers */
 	h1, h2, h3, h4, h5, h6 { color: #333; padding-bottom: 10px; line-height: 1em; font-weight: 500; }
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; font-family: "Microsoft YaHei" !important;}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 	h1 { font-size: 30px; }
 	h2 { font-size: 26px; }
 	h3 { font-size: 22px; }
@@ -69,10 +69,10 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 	/* Word Break */
 	#et-secondary-menu li, #top-menu li { word-wrap: break-word; }
 
-.subtitlecontainer { text-decoration: none; color: #9B9B9B; font-weight: normal; font-family: "Microsoft YaHei" !important; padding-top: .5em; }
+.subtitlecontainer { text-decoration: none; color: #9B9B9B; font-weight: normal; padding-top: .5em; }
 .subtitle { color: #9B9B9B;}
-.subtitle:hover { text-decoration: none !important; color: #6B6B6B !important; }
-#subtitletrans a { transition: all 0.4s ease-in-out; }
+/*.subtitle:hover { text-decoration: none !important; color: #6B6B6B !important; }
+#subtitletrans a { transition: all 0.4s ease-in-out; }*/
 
 /* Accent Color */
 .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { background: #154795; }
@@ -354,7 +354,7 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header { top: 62px; }
 	.et_pb_search_visible.et_pb_no_animation { opacity: 1; }
 	.et_pb_search_form_hidden { -webkit-animation: fadeOutTop 1s 1 cubic-bezier(0.77,0,.175,1); -moz-animation: fadeOutTop 1s 1 cubic-bezier(0.77,0,.175,1); -o-animation: fadeOutTop 1s 1 cubic-bezier(0.77,0,.175,1); animation: fadeOutTop 1s 1 cubic-bezier(0.77,0,.175,1); }
 	span.et_close_search_field { display: block; width: 30px; height: 30px; z-index: 99999; position: absolute; right: 0; cursor: pointer; top: 0; bottom: 0; margin: auto; }
-	span.et_close_search_field:after { font-family: 'ETmodules';  content: '\4d'; speak: none; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; font-size: 32px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	span.et_close_search_field:after { content: '\4d'; speak: none; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; font-size: 32px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 	.container.et_menu_container { z-index: 99; }
 	.container.et_search_form_container.et_pb_search_form_hidden { z-index: 1 !important; }
 	.et_search_outer { width: 100%; overflow: hidden; position: absolute; top: 0; }
@@ -431,7 +431,7 @@ p.woocommerce-result-count { font-weight: 500; font-size: 14px; color: #999; pad
 	table.cart th, #main-content table.cart th, table.cart td, #main-content table.cart td, table.cart tr, #main-content table.cart tr, #content-area table tr, #content-area table td, #content-area table th { padding: .857em 0.587em; max-width: 100px; }
 	table.cart td.actions .button.alt, #main-content table.cart td.actions .button.alt { margin: 19px 0 9px; }
 	table.cart td.actions .checkout-button { margin: 0 !important; }
-	.orderby, .woocommerce div.product form.cart .variations td select { background-color: #ececec; border: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: #666!important; font-size: 12px; padding: 4px 8px; font-weight: 500; font-family: 'Open Sans', Arial, sans-serif; }
+	.orderby, .woocommerce div.product form.cart .variations td select { background-color: #ececec; border: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: #666!important; font-size: 12px; padding: 4px 8px; font-weight: 500; }
 	.cart_totals h2, .shipping_calculator h2 { margin-bottom: 10px; }
 	.woocommerce div.product form.cart, .woocommerce-page div.product form.cart, .woocommerce #content div.product form.cart, .woocommerce-page #content div.product form.cart { margin: 24px 0 39px !important; }
 	.woocommerce div.product form.cart div.quantity, .woocommerce-page div.product form.cart div.quantity, .woocommerce #content div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity { margin: 0 20px 0 0 !important; -moz-border-radius: 3px !important; -webkit-border-radius: 3px !important; border-radius: 3px !important; width: auto; overflow: hidden; }
@@ -524,7 +524,7 @@ p.woocommerce-result-count { font-weight: 500; font-size: 14px; color: #999; pad
 		#et-secondary-nav li:hover { visibility: inherit; }
 
 	/* Dropdown Arrows */
-	#top-menu .menu-item-has-children > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after { font-family: 'ETmodules'; content: "3"; font-size: 16px; position: absolute; right: 0; top: 0; font-weight: 800; }
+	#top-menu .menu-item-has-children > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after { content: "3"; font-size: 16px; position: absolute; right: 0; top: 0; font-weight: 800; }
 	#top-menu .menu-item-has-children > a:first-child, #et-secondary-nav .menu-item-has-children > a:first-child { padding-right: 20px; }
 	#top-menu li .menu-item-has-children > a:first-child { padding-right: 40px; }
 	#top-menu li .menu-item-has-children > a:first-child:after { right: 20px; top: 6px; }

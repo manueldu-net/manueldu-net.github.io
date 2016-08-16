@@ -6,7 +6,8 @@
   color: lighten($text-color, 30%);
   font-size: 0.9em;
   background-color: #0C0C0C;
-  padding: 1.3% 20% !important
+  padding: 1.3% 20% !important;
+  font-family: $font-sans;
 }
 
 .page-footer {
@@ -18,6 +19,7 @@
   font-size: 0.9em;
   background-color: #0C0C0C;
   padding: 1.3% 20% !important;
+  font-family: $font-sans;
 }
 .page-footer a {
   color: #737373;

@@ -1,5 +1,5 @@
 	{% if post.category %}
-      {% capture category_content %} {{ site.sechby.category }} <i class="fa fa-book"></i>: <a href="{{ site.baseurl }}/{{ post.category }}/">{{ post.category }}</a>{% endcapture %}
+      {% capture category_content %} {{ site.sechby.category }} <a class="post-category" href="{{ site.baseurl }}/{{ post.category }}/">{{ post.category }}</a>{% endcapture %}
 	{% else %}
 	    {% assign category_content = 'NO_CATEGORY' %}
 	{% endif %}

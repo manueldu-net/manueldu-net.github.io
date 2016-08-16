@@ -3,7 +3,6 @@ article {
   border-top: 1px solid $border-color;
   float: left;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
   header {
     margin-bottom: 6%;
     text-align: center;
@@ -13,6 +12,9 @@ article {
   }
   .footnotes {
     font-size: 0.9em;
+  }
+  .post-content {
+    font-family: $font-serif;
   }
 }
 header {
@@ -48,6 +50,7 @@ header {
   }
   .post-content {
     @extend %padding-regular;
+    font-family: 'Roboto', sans-serif;
   }
   img {
     margin: auto;
@@ -79,6 +82,7 @@ header {
   }
   .post-content {
     @extend %padding-regular;
+    font-family: 'Roboto', sans-serif;
   }
 }
 // Post navigation

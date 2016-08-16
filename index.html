@@ -20,7 +20,7 @@ layout: default
 		    <p id="subtitletrans" class="subtitlecontainer">
 		      <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
           {% comment %}{% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}{% endcomment %}
-		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
+		      {% if post.category %} | <a class="subtitle">{{ category_content }}</a> {% endif %}
 		    </p>
 		  </header>
 		  <div class="excerpt">
