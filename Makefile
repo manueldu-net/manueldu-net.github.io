@@ -26,7 +26,7 @@ devel:
 	bundle exec jekyll serve --drafts -w
 
 clean:
-	rm -rf _site
+	rm -rf _site .sass-cache
 
 validate:
 	html5validator --root _site
