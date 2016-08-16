@@ -1,6 +1,6 @@
 // Typography
-$font-family-main: 'Sans-Serif';
-$font-family-headings: 'Sans-Serif';
+$font-family-main: 'Roboto Slab', serif;
+$font-family-headings: 'Open Sans', sans-serif;
 $font-size: 1em;
 
 // Padding
@@ -15,7 +15,8 @@ $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 
 // Typography colours
 $text-color: #383838;
-$link-color: #124ade;
+$link-color: #154795;
+$link-hover-color: #124ade;
 $selection-color: #D4D4D4; // visible when highlighting text
 
 // Header colours
@@ -34,4 +35,7 @@ $header-desc-background-color: #FFFFFF;
 $header-desc-text-color: #FFF;
 
 // Tag colors
-$tag-color: $text-color;
+$tag-color: #154795;
+
+// Categories
+$category-color: $text-color;

@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel='stylesheet' id='divi-style-css'  href="{{ "/css/style.css" | prepend: site.baseurl }}" type='text/css' media='all' />
-	<link rel="stylesheet" href="{{ "/css/post.style.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/post.style.css" | prepend: site.baseurl }}" type='text/css'/>
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.min.css">
 
@@ -35,9 +35,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
-	{% if site.theme.google_fonts %}
-	<link href="https://fonts.googleapis.com/css?family={{ site.theme.google_fonts }}" rel="stylesheet" type="text/css">
-	{% endif %}
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" type="text/css">
 
 	<!-- KaTeX -->
 	{% if site.theme.katex %}

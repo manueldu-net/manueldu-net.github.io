@@ -13,6 +13,9 @@ article {
   .footnotes {
     font-size: 0.9em;
   }
+  .post-content {
+    font-family: $font-serif;
+  }
 }
 header {
   h1 {
@@ -47,6 +50,7 @@ header {
   }
   .post-content {
     @extend %padding-regular;
+    font-family: 'Roboto', sans-serif;
   }
   img {
     margin: auto;
@@ -78,6 +82,7 @@ header {
   }
   .post-content {
     @extend %padding-regular;
+    font-family: 'Roboto', sans-serif;
   }
 }
 // Post navigation

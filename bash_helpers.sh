@@ -1,1 +1,1 @@
-alias grep="grep --exclude-dir='_site' --exclude-dir='.git' --exclude-dir='.mybundle' --exclude-dir='venv'"
+alias grep="grep --exclude-dir='_site' --exclude-dir='.git' --exclude-dir='.mybundle' --exclude-dir='venv' --exclude-dir='./_sass/bourbon/'"
