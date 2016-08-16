@@ -10,6 +10,14 @@ author:
   email: 'webmaster@manueldu.net'
   uri: 'https://github.com/riton'
 
+exclude:
+  - 'bash_helpers.sh'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'jekyll.log'
+  - 'Makefile'
+  - 'README.md'
+
 timezone: 'Europe/Paris'
 encoding: 'utf-8'
 safe: false
