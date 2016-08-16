@@ -19,7 +19,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 	body.et_cover_background { -moz-background-size: cover !important; -webkit-background-size: cover !important; background-size: cover !important; background-position: top center !important; background-repeat: no-repeat !important; background-attachment: fixed; }
 
 	/* Links */
-	a { text-decoration: none; color: #1ABC9C; }
+	a { text-decoration: none; color: #154795; }
 	a:hover { text-decoration: none; }
 
 	/* Inline Elements */
@@ -75,10 +75,10 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 #subtitletrans a { transition: all 0.4s ease-in-out; }
 
 /* Accent Color */
-.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { background: #1ABC9C; }
-#et_search_icon:hover, .mobile_menu_bar:before, .et-social-icon a:hover, .comment-reply-link, .form-submit input, .entry-summary p.price ins, .woocommerce div.product span.price, .woocommerce-page div.product span.price, .woocommerce #content div.product span.price, .woocommerce-page #content div.product span.price, .woocommerce div.product p.price, .woocommerce-page div.product p.price, .woocommerce #content div.product p.price, .woocommerce-page #content div.product p.price, .woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .woocommerce a.button.alt, .woocommerce-page a.button.alt, .woocommerce button.button.alt, .woocommerce-page button.button.alt, .woocommerce input.button.alt, .woocommerce-page input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce-page #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce a.button.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce #content input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce button.button, .woocommerce-page button.button:hover, .woocommerce input.button:hover, .woocommerce-page input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #respond input#submit:hover, .woocommerce #content input.button:hover, .wp-pagenavi span.current, .wp-pagenavi a:hover, .et_password_protected_form .et_submit_button, .nav-single a, .posted_in a, #top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, .bottom-nav li.current-menu-item > a, .footer-widget h4 { color: #1ABC9C; }
-.et-search-form, .nav li ul, .et_mobile_menu, .footer-widget li:before, blockquote { border-color: #1ABC9C; }
-#top-header, #et-secondary-nav li ul { background-color: #1ABC9C; }
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { background: #154795; }
+#et_search_icon:hover, .mobile_menu_bar:before, .et-social-icon a:hover, .comment-reply-link, .form-submit input, .entry-summary p.price ins, .woocommerce div.product span.price, .woocommerce-page div.product span.price, .woocommerce #content div.product span.price, .woocommerce-page #content div.product span.price, .woocommerce div.product p.price, .woocommerce-page div.product p.price, .woocommerce #content div.product p.price, .woocommerce-page #content div.product p.price, .woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .woocommerce a.button.alt, .woocommerce-page a.button.alt, .woocommerce button.button.alt, .woocommerce-page button.button.alt, .woocommerce input.button.alt, .woocommerce-page input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce-page #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce a.button.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce #content input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce button.button, .woocommerce-page button.button:hover, .woocommerce input.button:hover, .woocommerce-page input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #respond input#submit:hover, .woocommerce #content input.button:hover, .wp-pagenavi span.current, .wp-pagenavi a:hover, .et_password_protected_form .et_submit_button, .nav-single a, .posted_in a, #top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, .bottom-nav li.current-menu-item > a, .footer-widget h4 { color: #154795; }
+.et-search-form, .nav li ul, .et_mobile_menu, .footer-widget li:before, blockquote { border-color: #154795; }
+#top-header, #et-secondary-nav li ul { background-color: #154795; }
 
 /* Containers */
 #main-content { background-color: #fff; }
@@ -229,7 +229,9 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header { top: 62px; }
 #top-header, #top-header .container, #top-header #et-info, #top-header .et-social-icon a { line-height: 1em; }
 #top-header .container { padding-top: .75em; }
 
-#archive { padding:0 0 0 30%; }
+#archive {
+    padding: 0 0 0 20%;
+}
 
 	/* Transparent Nav */
 	.et_non_fixed_nav.et_transparent_nav.et_show_nav #page-container,
@@ -852,7 +854,7 @@ ul.et_pb_side_nav .side_nav_item a.active { background-color: #fff !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav ul li:hover > ul { -webkit-animation: flipInX .6s ease-in-out; -moz-animation: flipInX .6s ease-in-out; -o-animation: flipInX .6s ease-in-out; animation: flipInX .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav li:hover > ul { -webkit-animation: flipInY .6s ease-in-out; -moz-animation: flipInY .6s ease-in-out; -o-animation: flipInY .6s ease-in-out; animation: flipInY .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 	
-	#page-container { min-height:100vh !important; position:relative !important; }
+	#page-container { min-height: 100vh !important; position:relative !important; }
 	
 	/* Vertical Navigation */
 	.et_vertical_nav #et-main-area, .et_vertical_nav #top-header { margin-left: 225px !important; position: relative; }
@@ -1187,3 +1189,10 @@ ul.et_pb_side_nav .side_nav_item a.active { background-color: #fff !important; }
 	#page-container { padding-top: 0 !important; }
 	#respond { display: none; }
 }
+
+/* Top left logo properties */
+.logo_img {
+  width: 53px;
+  height: 53px;
+}
+

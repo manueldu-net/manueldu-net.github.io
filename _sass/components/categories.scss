@@ -1,0 +1,21 @@
+.post-category {
+  display: inline-block;
+  background: rgba($tag-color, 0.15);
+  padding: 0 .5rem;
+  margin-right: .5rem;
+  border-radius: 4px;
+  color: $tag-color;
+  font-family: $font-sans;
+  font-size: 105%;
+  &:before {
+    content: "\f02d";
+    font-family: $font-font-awesome;
+    padding-right: .5em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: $tag-color;
+    color: $white;
+  }
+  @include transition(all .1s ease-in-out);
+}

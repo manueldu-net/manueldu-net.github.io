@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.DS_Store
+.ruby-version
+Gemfile.lock
+.mybundle
+.bundle
+*.swp
+.sass-cache

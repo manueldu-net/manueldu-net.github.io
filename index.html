@@ -3,15 +3,13 @@ layout: default
 ---
 <div class="home">
   <article class="home-feature-image" >
-  <div style="background-image: url('{{ site.baseurl }}/{{ site.theme.place_holder_image }}')"/>
-  <header style="background-image: url('{{ site.imageurl }}')">
-    <p class="call-out-content"> {{ site.theme.header_text }} </p>
-  </header>
+    <img src="{{ site.imageurl }}"/>
   </article>
 
 	<div class="posts">
 	{% for post in paginator.posts %}
 		{% include post_tags_category.html %}
+    {% include post_date.html %}
 		<div class="post-teaser">
 		  <header>
 		    <h1>
@@ -20,8 +18,8 @@ layout: default
 		      </a>
 		    </h1>
 		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
-		      {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
+		      <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
+          {% comment %}{% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}{% endcomment %}
 		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
 		    </p>
 		  </header>
@@ -43,8 +41,6 @@ layout: default
 	</div>
 
 	<div class="wp-pagenavi">
-	    <span class='pages'>第 {{ paginator.page }} 页，共 {{ paginator.total_pages }} 页</span>
-
 	    {% if paginator.previous_page %}
 	    	<a class="previouspostslink" rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" > « </a>
 	    {% endif %}
@@ -59,7 +55,7 @@ layout: default
 	        {% if count == paginator.page %}
 	          <span class="current">{{ count }}</span>
 	        {% else %}
-	          <a class="page larger" href="{{ site.baseurl }}/blog/page{{ count }}">{{ count }}</a>
+	          <a class="page larger" href="{{ site.baseurl }}/page{{ count }}">{{ count }}</a>
 	        {% endif %}
 	    {% endfor %}
 

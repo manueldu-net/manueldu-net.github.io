@@ -3,8 +3,7 @@
 		<div class="logo_container">
 			<span class="logo_helper"></span>
 			<a href="{{ site.baseurl }}/">
-				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
-				{{ site.theme.yoursitetitle }}
+                            <img class="logo_img" src="/img/logo.svg">
 			</a>
 		</div>
 		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
@@ -15,18 +14,35 @@
 							{{ site.theme.hometitle }}
 						</a>
 					</li>
-					{% for page in site.pages %}
-					{% if page.title and page.hide != true %}
-					<li>
-						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-							{{ page.title }}
-						</a>
-					</li>
-					{% endif %}
-					{% endfor %}
+          <!-- Liste des themes -->
+          <li>
+            <a class="page-link" href="/{{ 'themes-du-site' | prepend: site.baseurl }}/">
+            Liste des thèmes
+            </a>
+          </li>
+
+          <!-- Liste des mots clefs -->
+          <li>
+            <a class="page-link" href="/{{ 'mots-cles' | prepend: site.baseurl }}/">
+            Liste des mots cles
+            </a>
+          </li>
+
+          <li>
+            <a class="page-link" href="/{{ 'archives' | prepend: site.baseurl }}/">
+            Archives
+            </a>
+          </li>
+
+          <li>
+            <a class="page-link" href="/{{ 'a-propos' | prepend: site.baseurl }}/">
+            A propos
+            </a>
+          </li>
+
 					<!-- Social icons from Font Awesome, if enabled -->
 					<li>
-						<a class="page-link" href="">Find Me</a>
+						<a class="page-link" href="">Social</a>
 						<ul class="children">{% include icons.html %}</ul>
 					</li>
 					
@@ -41,6 +57,7 @@
 			</div>				
 		</div> <!-- #et-top-navigation -->
 	</div> <!-- .container -->
+        <!--
 	<div class="et_search_outer">
 		<div class="container et_search_form_container">
 			<form role="search" method="get" class="et-search-form" action="{{ site.url }}">
@@ -48,4 +65,5 @@
 			<span class="et_close_search_field"></span>
 		</div>
 	</div>
+        -->
 </header> <!-- #main-header -->

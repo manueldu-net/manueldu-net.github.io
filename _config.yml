@@ -1,87 +1,126 @@
 # SITE CONFIGURATION
-baseurl: "/fengzhichu-theme" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
-url: "https://fengzhichu.com/fengzhichu-theme" # the base hostname & protocol for your site
-imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
+baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
+url: "https://manueldu.net" # the base hostname & protocol for your site
+imageurl: "/img/banner.png" #"https://unsplash.it/2600/500?random"
+aboutimageurl: "/img/about.png"
+name: Manuel Du Net
+description: Site dédié à la vulgarisation de l'outil informatique et de l'Internet
+author:
+  name: 'riton'
+  email: 'webmaster@manueldu.net'
+  uri: 'https://github.com/riton'
+
+exclude:
+  - 'bash_helpers.sh'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'jekyll.log'
+  - 'Makefile'
+  - 'README.md'
+
+timezone: 'Europe/Paris'
+encoding: 'utf-8'
+safe: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: 'posts'
+    values:
+      is_post: true
+
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: YOUR TITLE
+  title: Manuel Du Net
   #avatar: avatar.png
-  hometitle: Home #display on navigation menu.
-  yoursitetitle: YOUR LOGO
+  hometitle: Accueil #display on navigation menu.
+  yoursitetitle: Votre Aide sur Internet
   gravatar: # Email MD5 hash
+  jabberchannel: 
   description: "used by search engines" # used by search engines
-  visiblewords: 300
+  visiblewords: 80
   # Header and footer text
   header_text: >
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+   _
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
   footer_text: >
-   <a href="https://yoursite.com">YOUR TITLE</a> 
+   <a href="https://manueldu.net">ManuelDu.Net</a>
 
   # Icons
   rss: false
-  email_address: "sam@example.com" # Full email address, e.g. "sam@example.com"
+  email_address: "webmaster@manueldu.net" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: "fengzhichu"
-  weibo: 
-  google_plus:
+  github: "manueldu-net"
+  weibo:
+  google_plus: "107994725264695892063"
   instagram:
   linkedin:  # Full URL
-  pinterest: 
+  pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "fengzhichu"
+  twitter: "ManuelDuNet"
   wordpress:
-  youtube:
+  youtube: "UC2nIVH1hpSSe44XZlSnZe9Q"
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  google_analytics: "UA-71957111-1" # Tracking ID, e.g. "UA-000000-01"
+  google_tagmanager: "GTM-KJFT75"
+  disqus_identifier: 'manueldunet'
   katex: true # Enable if using math markup
 
   # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
+  str_follow_on: "Suivre sur"
+  str_rss_follow: "Suivre le flux RSS"
   str_email: "Email"
   #str_next: "Next"
   #str_prev: "Prev"
-  str_continue_reading: "Continue Reading..."
+  str_continue_reading: "Lire la suite de l'article"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
   # Post navigation
-  post_navigation: false
+  post_navigation: true
 
 # PAGINATION
-enforce_ssl: "fengzhichu.com"
+enforce_ssl: "manueldu.net"
 paginate: 5
-paginate_path: "blog/page:num"
-permalink: blog/:title/ 
+paginate_path: "/page:num"
+permalink: '/:title/'
 
 # Posted in ... with ...
-sechby: 
+sechby:
   category:   #in
   tag:   #with
 
+tag_page: '/mots-cles/'
+category_page: '/themes-du-site/'
+
 # BUILD SETTINGS
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
+
 highlighter: pygments
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed

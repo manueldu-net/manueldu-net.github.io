@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Archive
-permalink: /Archives/
+permalink: /archives/
 ---
 <section id="archive">
   {%for post in site.posts %} 
+    {% include post_date.html %}
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
       <ul class="this">
@@ -17,7 +18,10 @@ permalink: /Archives/
         <ul class="past">
       {% endif %}
     {% endunless %}
-      <li><time>{{ post.date | date:"%m月%d日 " }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+        {% assign month_idx = post.date | date:"%m" %}
+        <b><a href="{{ post.url }}">{{ post.title }}</a></b> publié le <time>{{ post_date }}</time>
+      </li>
   {% endfor %}
   </ul>
 </section>
