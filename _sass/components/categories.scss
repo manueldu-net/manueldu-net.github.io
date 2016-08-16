@@ -1,10 +1,10 @@
 .post-category {
   display: inline-block;
-  background: rgba($tag-color, 0.15);
+  background: rgba($category-color, 0.15);
   padding: 0 .5rem;
   margin-right: .5rem;
   border-radius: 4px;
-  color: $tag-color;
+  color: $category-color;
   font-family: $font-sans;
   font-size: 105%;
   &:before {
@@ -13,9 +13,9 @@
     padding-right: .5em;
   }
   &:hover {
-    text-decoration: none;
-    background: $tag-color;
-    color: $white;
+    text-decoration: none !important;
+    background: $category-color;
+    color: $white !important;
   }
   @include transition(all .1s ease-in-out);
 }

@@ -10,8 +10,10 @@ Thèmes des articles du Manuel Du Net
 
 <div class="tags-expo">
   <div class="tags-expo-list">
-    {% for tag in site.categories %}
-    <a href="#{{ tag[0] | url_encode }}" class="post-category">{{ tag[0] }}</a>
+    {% for category in site.categories %}
+    <a href="#{{ category | first | url_encode }}" class="post-category">
+    {{ category | first }} ({{ category | last | size }})
+    </a>
     {% endfor %}
   </div>
   <hr/>

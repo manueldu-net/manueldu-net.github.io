@@ -11,7 +11,9 @@ Mots clefs des articles du Manuel Du Net
 <div class="tags-expo">
   <div class="tags-expo-list">
     {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    <a href="#{{ tag[0] | slugify }}" class="post-tag">
+      {{ tag[0] }} ({{ tag | last | size }})
+    </a>
     {% endfor %}
   </div>
   <hr/>

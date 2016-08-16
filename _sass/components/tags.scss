@@ -19,3 +19,8 @@
   }
   @include transition(all .1s ease-in-out);
 }
+
+/* Used in post tags list */
+div.post-tags {
+  margin-top: 5px;
+}

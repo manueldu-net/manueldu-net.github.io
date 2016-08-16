@@ -19,8 +19,8 @@ build-nodeps:
 	bundle exec jekyll build
 	$(HTML_MINIFIER)
 
-serve: build
-	bundle exec jekyll serve -w 1>jekyll.log 2>&1
+serve: clean build
+	bundle exec jekyll serve -w 2>&1 | tee -a jekyll.log
 
 devel:
 	bundle exec jekyll serve --drafts -w
