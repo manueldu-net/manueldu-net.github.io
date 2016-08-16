@@ -14,15 +14,18 @@ layout: default
     <h1 class="title">{{ page.title }}</h1>
     <p id="subtitletrans" class="subtitlecontainer">
     <i class="fa fa-calendar"></i> <a class="subtitle">{{ post_date }}</a>
-    {% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %}
-    | <a class="subtitle">{{ category_content }}</a>
+    {% comment %} {% if post.author %} par <a class="subtitle" href="{{ site.baseurl }}/about/"><b>{{ post.author }}</b></a>{% endif %} {% endcomment %}
+    | 
+    <a class="subtitle">
+      <i class="fa fa-book"></i>: <a href="{{ site.category_page }}#{{ post.category | url_encode }}">{{ post.category }}</a>
+    </a>
     <br/>
-    <a class="subtitle post-tag">
-      {% if page.tags %}
-        {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
-        {% endfor %}
-      {% endif %}
+    {% if page.tags and page.tags.size > 0 %}
+    <a class="subtitle">
+      {% for tag in page.tags %}
+        <a href="{{ site.tag_page }}#{{ tag | slugify | url_encode }}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    {% endif %}
     </a>
     </p>
   </header>
@@ -55,7 +58,7 @@ layout: default
 {% endif %}
 
 <!-- Disqus -->
-{% if site.theme.disqus_shortname %}
+{% if site.theme.disqus_identifier %}
 <div class="comments">
   {% include disqus.html %}
 </div>
