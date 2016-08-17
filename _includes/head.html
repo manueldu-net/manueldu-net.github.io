@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme.title }}</title>
-	<meta name="description" content="{% if post.category and post.tags %}{{ category_content }}, {{ tags_content }}, {% endif %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.theme.description }}{% endif %}. {{ page.category }}{% if page.tags and page.tags.size > 0 %}, {{ page.tags | join: ', ' }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->

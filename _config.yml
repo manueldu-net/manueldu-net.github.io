@@ -4,7 +4,7 @@ url: "https://manueldu.net" # the base hostname & protocol for your site
 imageurl: "/img/banner.png" #"https://unsplash.it/2600/500?random"
 aboutimageurl: "/img/about.svg"
 name: Manuel Du Net
-description: Site dédié à la vulgarisation de l'outil informatique et de l'Internet
+description: Site dédié à la vulgarisation de l'outil informatique, de la sécurité informatique et de l'Internet
 author:
   name: 'riton'
   email: 'webmaster@manueldu.net'
@@ -40,7 +40,7 @@ theme:
   yoursitetitle: Votre Aide sur Internet
   gravatar: # Email MD5 hash
   jabberchannel: 
-  description: "used by search engines" # used by search engines
+  description: "Site dédié à la vulgarisation de l'outil informatique, de la sécurité informatique et de l'Internet"
   visiblewords: 80
   # Header and footer text
   header_text: >
