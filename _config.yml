@@ -10,6 +10,17 @@ author:
   email: 'webmaster@manueldu.net'
   uri: 'https://github.com/riton'
 
+# List of keywords that should be included in all pages
+keywords:
+  - 'securité'
+  - 'informatique'
+  - 'manuel'
+  - 'internet'
+  - 'vie privée'
+  - 'données personnelles'
+  - 'ordinateur'
+  - 'aide'
+
 exclude:
   - 'bash_helpers.sh'
   - 'Gemfile'

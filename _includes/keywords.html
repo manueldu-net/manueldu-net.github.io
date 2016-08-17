@@ -1,0 +1,7 @@
+{% assign always_keywords = site.keywords | join: ',' %}
+
+{% if page.keywords and page.keywords.size > 0 %}
+  {% capture keywords %}{{ page.keywords | join: ',' }},{{ always_keywords }}{% endcapture %}
+{% else %}
+  {% assign keywords = always_keywords %}
+{% endif %}
