@@ -2,7 +2,7 @@
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "https://manueldu.net" # the base hostname & protocol for your site
 imageurl: "/img/banner.png" #"https://unsplash.it/2600/500?random"
-aboutimageurl: "/img/about.png"
+aboutimageurl: "/img/about.svg"
 name: Manuel Du Net
 description: Site dédié à la vulgarisation de l'outil informatique et de l'Internet
 author:
