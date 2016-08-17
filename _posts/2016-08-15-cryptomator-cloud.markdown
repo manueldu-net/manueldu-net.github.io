@@ -4,6 +4,16 @@ title:  "Chiffrer facilement vos données Google Drive, DropBox, ... avec Crypto
 description: |
   Les offres de stockage Cloud telles que Google Drive, Microsoft OneDrive et DropBox deviennent de plus en plus incontournables. Compte tenu de l'aspect sensible de certaines des données que nous pouvons y stocker, comment garantir que nous pourrons être les seuls à y avoir accès ? CryptoMator est une des solutions permettant de répondre à cette question
 
+keywords:
+  - cryptomator
+  - google drive
+  - drive
+  - dropbox
+  - onedrive
+  - microsoft onedrive
+  - cloud
+  - stockage
+
 date:   2016-08-15
 author: riton
 category: Cloud

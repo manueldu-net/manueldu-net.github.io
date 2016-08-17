@@ -1,9 +1,13 @@
 {% assign post = page %}
 {% include description.html %}
+{% include keywords.html %}
 <head>
 	<meta charset="UTF-8">
 	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines }}{% else %}{{ site.theme.description }}{% endif %}. {{ page.category }}{% if page.tags and page.tags.size > 0 %}, {{ page.tags | join: ', ' }}{% endif %}">
+
+  <meta name="keywords" content="{{ keywords }}">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
